@@ -13,7 +13,7 @@ public class SampleFileReaderControlsTest {
 		/* GIVEN */
 		String fileName = null;
 		/* WHEN */
-		SampleFileReaderControls.controlFilePathParameter(fileName);
+		SampleFileReaderParameterControls.controlFilePathParameter(fileName);
 	}
 
 	/**
@@ -24,7 +24,7 @@ public class SampleFileReaderControlsTest {
 		/* GIVEN */
 		String fileName = "../testCase01.csv";
 		/* WHEN */
-		SampleFileReaderControls.controlFilePathParameter(fileName);
+		SampleFileReaderParameterControls.controlFilePathParameter(fileName);
 	}
 
 }
