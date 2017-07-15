@@ -22,7 +22,7 @@ public class SampleFileReader {
 	}
 
 	/**
-	 * handle linux and windows file path
+	 * if linux filePath and we are on a windows os we change the url
 	 * 
 	 * @param absoluteFilePath
 	 * @return file path according to the os
@@ -36,6 +36,12 @@ public class SampleFileReader {
 		}
 	}
 
+	/**
+	 * say if it's a linux path
+	 * 
+	 * @param absoluteFilePath
+	 * @return
+	 */
 	private boolean isLinuxFilePath(final String absoluteFilePath) {
 		return absoluteFilePath.charAt(0) == "/".charAt(0);
 	}
